@@ -1,8 +1,8 @@
 class Espresso < Formula
   desc "Keep your Mac awake from the terminal — a tiny Amphetamine with ASCII art"
   homepage "https://github.com/SantiagoCoronado/espresso"
-  url "https://github.com/SantiagoCoronado/espresso/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "0f461585c41b3b26c83ec40211ed1d37ed3330805d75827d45de14d4b27f692a"
+  url "https://github.com/SantiagoCoronado/espresso/archive/refs/tags/v1.1.1.tar.gz"
+  sha256 "8d4367d6ff5a041880d3930bdd3ec7e48ad137540bb6e564ff8a01bec324b6b3"
   license "MIT"
 
   depends_on :macos
@@ -12,6 +12,6 @@ class Espresso < Formula
   end
 
   test do
-    assert_match "espresso 1.1.0", shell_output("#{bin}/espresso --version")
+    assert_match "espresso 1.1.1", shell_output("#{bin}/espresso --version")
   end
 end
